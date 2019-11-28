@@ -270,12 +270,10 @@ Test A:
   macOS VoiceOver
     OK
   Windows 7 + IE11 + JAWS
-    OK
+    Parent legend not announced on focus
   Windows 7 + Firefox + NVDA
     OK
   iOS VoiceOver
-    Parent legend not announced on focus
-  Windows 7 + IE11 + JAWS
     Parent legend not announced on focus
   Windows 7 + IE11 + NVDA
     Neither legend announced on focus
