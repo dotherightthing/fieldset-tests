@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fieldset test page</title>
+    <style>
+      html * {
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 2rem;
+        margin: 0;
+      }
+
+      .l-row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .l-col-12 {
+        grid-column: span 12;
+      }
+
+      div,
+      fieldset {
+        padding: .5rem;
+        border: 1px solid;
+      }
+
+      fieldset {
+        padding: .7rem;
+      }
+
+      .display-contents {
+        display: contents;
+        border: 1px dashed;
+      }
+
+      .display-contents,
+      .display-contents div,
+      .display-contents fieldset {
+        opacity: .5;
+      }
+
+      body {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+      }
+
+      h1,
+      h2 {
+        font-size: inherit;
+        font-weight: normal;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-top: 0;
+      }
+
+      fieldset,
+      label,
+      input {
+        max-width: 100%;
+      }
+
+      h1,
+      fieldset {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-top: 3rem;
+      }
+
+      div fieldset {
+        margin-bottom: 0;
+      }
+
+      legend {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+      }
+
+      label::after {
+        content: ": ";
+      }
+
+      input[type="text"] {
+        display: block;
+        font-size: 1.25rem;
+        padding: .5rem;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fieldset test page</h1>
+
+    <h2>Test 1: Fieldset</h2>
+
+    <fieldset>
+      <legend>Test 1 legend</legend>
+      <label for="test1-input">Test 1 input</label>
+      <input type="text" id="test1-input" placeholder="Test 1 input placeholder" value="" />
+    </fieldset>
+  
+    <h2>Test 2: Fieldset in DIV</h2>
+
+    <div>
+      <fieldset>
+        <legend>Test 2 legend</legend>
+        <label for="test2-input">Test 2 input</label>
+        <input type="text" id="test2-input" placeholder="Test 2 input placeholder" value="" />
+      </fieldset>
+    </div>
+
+    <h2>Test 3: Fieldset in DIV with display contents</h2>
+
+    <div class="display-contents">
+      <fieldset>
+        <legend>Test 3 legend</legend>
+        <label for="test3-input">Test 3 input</label>
+        <input type="text" id="test3-input" placeholder="Test 3 input placeholder" value="" />
+      </fieldset>
+    </div>
+
+    <h2>Test 4: Fieldset in grid DIVs</h2>
+
+    <div class="l-row">
+      <div class="l-col-12">
+        <fieldset>
+          <legend>Test 4 legend</legend>
+          <label for="test4-input">Test 4 input</label>
+          <input type="text" id="test4-input" placeholder="Test 4 input placeholder" value="" />
+        </fieldset>
+      </div>
+    </div>
+
+    <h2>Test 5: Fieldset as grid row</h2>
+
+    <fieldset class="l-row">
+      <legend class="l-col-12">Test 5 legend</legend>
+      <div class="l-col-12">
+        <label for="test5-input">Test 5 input</label>
+        <input type="text" id="test5-input" placeholder="Test 5 input placeholder" value="" />
+      </div>
+    </fieldset>
+
+    <h2>Test 6: Fieldset as display contents</h2>
+
+    <fieldset class="display-contents">
+      <legend class="l-col-12">Test 6 legend</legend>
+        <label for="test6-input">Test 6 input</label>
+        <input type="text" id="test6-input" placeholder="Test 6 input placeholder" value="" />
+    </fieldset>
+
+    <h2>Test 7: Fieldset as nested grid row inside display contents</h2>
+
+    <div class="l-row">
+      <div class="l-col-12">
+        <div class="display-contents">
+          <fieldset class="l-row">
+            <legend class="l-col-12">Test 7 legend</legend>
+            <div class="l-col-12">
+              <label for="test7-input">Test 7 input</label>
+              <input type="text" id="test7-input" placeholder="Test 7 input placeholder" value="" />
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <h2>Test 8: Nested Fieldset</h2>
+
+    <fieldset>
+      <legend>Test 8 parent legend</legend>
+      <fieldset>
+        <legend>Test 8 child legend</legend>
+        <div>
+          <label for="test8-input">Test 8 input</label>
+          <input type="text" id="test8-input" placeholder="Test 8 input placeholder" value="" />
+        </div>
+      </fieldset>
+    </fieldset>
+  </body>
+</html>
