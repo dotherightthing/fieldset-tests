@@ -284,3 +284,103 @@ Test A:
   Android 6.0.1 + Chrome + Talkback
      Neither legend announced on focus
 ```
+
+### Test 9: Fieldset with visually hidden legend
+
+```
+Test A:
+  macOS VoiceOver
+    TODO
+  Windows 7 + IE11 + JAWS
+    TODO
+  Windows 7 + Firefox + NVDA
+    TODO
+  iOS VoiceOver
+    OK
+  Windows 7 + IE11 + NVDA
+    TODO
+  Windows 10 Home + Edge + Narrator
+    TODO
+  Android 6.0.1 + Chrome + Talkback
+    TODO
+```
+
+### Test 10: Fieldset with visually hidden legend with display:table
+
+```
+Test A:
+  macOS VoiceOver
+    TODO
+  Windows 7 + IE11 + JAWS
+    TODO
+  Windows 7 + Firefox + NVDA
+    TODO
+  iOS VoiceOver
+    OK
+  Windows 7 + IE11 + NVDA
+    TODO
+  Windows 10 Home + Edge + Narrator
+    TODO
+  Android 6.0.1 + Chrome + Talkback
+    TODO
+```
+
+### Test 11: Fieldset as flex row, with visually hidden legend with display:table
+
+```
+Test A:
+  macOS VoiceOver
+    TODO
+  Windows 7 + IE11 + JAWS
+    TODO
+  Windows 7 + Firefox + NVDA
+    TODO
+  iOS VoiceOver
+    OK
+  Windows 7 + IE11 + NVDA
+    TODO
+  Windows 10 Home + Edge + Narrator
+    TODO
+  Android 6.0.1 + Chrome + Talkback
+    TODO
+```
+
+### Test 12: Fieldset within form, with visually hidden legend with display:table
+
+```
+Test A:
+  macOS VoiceOver
+    TODO
+  Windows 7 + IE11 + JAWS
+    TODO
+  Windows 7 + Firefox + NVDA
+    TODO
+  iOS VoiceOver
+    OK
+  Windows 7 + IE11 + NVDA
+    TODO
+  Windows 10 Home + Edge + Narrator
+    TODO
+  Android 6.0.1 + Chrome + Talkback
+    TODO
+```
+
+### Test 13: Fieldset within form within article, with visually hidden legend with display:table
+
+```
+Test A:
+  macOS VoiceOver
+    OK
+  Windows 7 + IE11 + JAWS
+    TODO
+  Windows 7 + Firefox + NVDA
+    TODO
+  iOS VoiceOver
+    Legend not announced
+  Windows 7 + IE11 + NVDA
+    TODO
+  Windows 10 Home + Edge + Narrator
+    TODO
+  Android 6.0.1 + Chrome + Talkback
+    TODO
+```

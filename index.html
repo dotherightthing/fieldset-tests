@@ -23,6 +23,14 @@
         grid-column: span 12;
       }
 
+      .l-flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+      }
+
       div,
       fieldset {
         padding: .5rem;
@@ -97,6 +105,23 @@
         font-size: 1.25rem;
         padding: .5rem;
         border: 1px solid;
+      }
+
+      /* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+
+      .h-visuallyhidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        clip: rect(0 0 0 0);
+      }
+
+      .displaytable {
+        display: table;
       }
     </style>
   </head>
@@ -189,5 +214,58 @@
         </div>
       </fieldset>
     </fieldset>
+
+    <h2>Test 9: Fieldset with visually hidden legend</h2>
+
+    <fieldset>
+      <legend class="h-visuallyhidden">Test 9 legend</legend>
+      <label for="test9-input">Test 9 input</label>
+      <input type="text" id="test9-input" placeholder="Test 9 input placeholder" value="" />
+    </fieldset>
+
+    <h2>Test 10: Fieldset with visually hidden legend with display:table</h2>
+
+    <fieldset>
+      <legend class="h-visuallyhidden displaytable">Test 10 legend</legend>
+      <label for="test10-input">Test 10 input</label>
+      <input type="text" id="test10-input" placeholder="Test 10 input placeholder" value="" />
+    </fieldset>
+
+    <h2>Test 11: Fieldset as flex row, with visually hidden legend with display:table</h2>
+
+    <fieldset class="l-flex-row">
+      <legend class="h-visuallyhidden displaytable">Test 11 legend</legend>
+      <div>
+        <label for="test11-input">Test 11 input</label>
+        <input type="text" id="test11-input" placeholder="Test 11 input placeholder" value="" />
+      </div>
+    </fieldset>
+
+    <h2>Test 12: Fieldset within form, with visually hidden legend with display:table</h2>
+
+    <form action="" novalidate="novalidate" _lpchecked="1">
+      <fieldset>
+        <legend class="h-visuallyhidden displaytable">Test 12 legend</legend>
+        <div>
+          <label for="test12-input">Test 12 input</label>
+          <input type="text" id="test12-input" placeholder="Test 12 input placeholder" value="" />
+        </div>
+      </fieldset>
+    </form>
+
+    <h2>Test 13: Fieldset within form within article, with visually hidden legend with display:table</h2>
+
+    <article role="main">
+      <form action="" novalidate="novalidate" _lpchecked="1">
+        <fieldset>
+          <legend class="h-visuallyhidden displaytable">Test 13 legend</legend>
+          <div>
+            <label for="test13-input">Test 13 input</label>
+            <input type="text" id="test13-input" placeholder="Test 13 input placeholder" value="" />
+          </div>
+        </fieldset>
+      </form>
+    </article>
+
   </body>
 </html>
