@@ -89,7 +89,7 @@ npm run serve
     Ctrl + Windows Key + Enter
   Test A
     [CapsLk] + Ctrl + PgUp / PdDown > Form fields
-    [CapsLk] + Ctrl + Left Arrow / Right Arrow
+    [CapsLk] + Left Arrow / Right Arrow
 ```
 
 ### Android 6.0.1 + Chrome + Talkback
