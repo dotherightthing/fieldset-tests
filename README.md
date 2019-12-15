@@ -126,8 +126,8 @@ npm run serve
 9. `fieldset` with visually hidden `legend`
 10. `fieldset` with visually hidden `legend` with `display:table`
 11. `fieldset` as flex row, with visually hidden `legend` with `display:table`
-12. `fieldset` within form, with visually hidden `legend` with `display:table`
-13. `fieldset` within form within `article[role="main"]`, with visually hidden `legend` with `display:table`
+12. `fieldset` within `form`, with visually hidden `legend` with `display:table`
+13. `fieldset` within `form` within `article[role="main"]`, with visually hidden `legend` with `display:table`
 14. `[role="*group*"]` with `[aria-labelledby]` within `fieldset` within `form`
 
 ### Audio responses
