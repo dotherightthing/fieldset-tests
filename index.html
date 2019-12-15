@@ -267,5 +267,18 @@
       </form>
     </article>
 
+    <h2>Test 14: [role="group"] with [aria-labelledby] within fieldset within form</h2>
+
+    <form action="" novalidate="novalidate">
+      <fieldset>
+        <legend>Test 14 legend</legend>
+        <div role="group" aria-labelledby="test14-legend">
+          <div id="test14-legend">Test 14 group label</div>
+          <label for="test14-input">Test 14 input</label>
+          <input type="text" id="test14-input" placeholder="Test 14 input placeholder" value="" />
+        </div>
+      </fieldset>
+    </form>
+
   </body>
 </html>
