@@ -116,20 +116,20 @@ npm run serve
 ### Test key
 
 1. `fieldset`
-2. `fieldset` in `div`
-3. `fieldset` in `div` with `display:contents`
-4. `fieldset` in grid `div`s
-5. `fieldset` as grid row
-6. `fieldset` as `display:contents`
-7. `fieldset` as nested grid row inside `display:contents`
-8. Nested `fieldset`
-9. `fieldset` with visually hidden `legend`
-10. `fieldset` with visually hidden `legend` with `display:table`
-11. `fieldset` as flex row, with visually hidden `legend` with `display:table`
-12. `fieldset` within `form`, with visually hidden `legend` with `display:table`
-13. `fieldset` within `form` within `article[role="main"]`, with visually hidden `legend` with `display:table`
-14. `[role="*group*"]` with `[aria-labelledby]` within `fieldset` within `form`
-15. 
+2. `div > fieldset`
+3. `div.display-contents > fieldset`
+4. `div.grid-row > div.grid-col > fieldset`
+5. `fieldset.grid-row`
+6. `fieldset.display-contents`
+7. `div.grid-row > div.grid-col > div.display-contents > fieldset.grid-row`
+8. `fieldset > fieldset`
+9. `fieldset > legend.visually-hidden`
+10. `fieldset > legend.visually-hidden.display-table`
+11. `fieldset.flex-row > legend.visually-hidden.display-table`
+12. `form > fieldset > legend.visually-hidden.display-table`
+13. `article[role="main"] > form > fieldset > legend.visually-hidden.display-table`
+14. `form > fieldset > [role="group"][aria-labelledby]`
+15. `form > fieldset > [role="radiogroup"][aria-labelledby]`
 
 ### Audio responses
 
