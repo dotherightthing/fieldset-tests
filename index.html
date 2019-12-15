@@ -280,5 +280,20 @@
       </fieldset>
     </form>
 
+    <h2>Test 15: [role="radiogroup"] with [aria-labelledby] within fieldset within form</h2>
+
+    <form action="" novalidate="novalidate">
+      <fieldset>
+        <legend>Test 15 legend</legend>
+        <div role="radiogroup" aria-labelledby="test15-legend">
+          <div id="test15-legend">Test 15 radio group label</div>
+          <label for="test15a-input">Test 15a input</label>
+          <input type="radio" name="test15-input" id="test15a-input" />
+          <label for="test15b-input">Test 15b input</label>
+          <input type="radio" name="test15-input" id="test15b-input" />
+        </div>
+      </fieldset>
+    </form>
+
   </body>
 </html>
